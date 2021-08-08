@@ -1,0 +1,5 @@
+#Web Framework
+Flask==2.0.1
+
+#Web Server
+gunicorn==20.1.0

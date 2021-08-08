@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+
+  # The backend service running the API
+  app:
+    build: ./app
+    environment:
+      - INPUT_FILES_DIRECTORY:/input_files
+      - PYTHONUNBUFFERED:1
+      - TEXT_FILENAME
+    ports:
+      - 5000:5000
+    volumes:
+      - ./input_files:/input_files
